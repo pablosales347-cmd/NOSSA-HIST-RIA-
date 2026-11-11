@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nossa História ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #fff5f6;
+  color: #704550;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(135deg, #d9899e, #f2b9c5);
+  color: white;
+  padding: 75px 20px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+section {
+  padding: 45px 20px;
+}
+
+h2 {
+  color: #bd7185;
+}
+
+.contador {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  max-width: 350px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px #e9cbd2;
+}
+
+#dias {
+  font-size: 35px;
+  color: #bd7185;
+  font-weight: bold;
+}
+
+.carta {
+  max-width: 550px;
+  margin: auto;
+  line-height: 1.9;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+footer {
+  padding: 25px;
+  background: #e9b1be;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Nossa História ❤️</h1>
+  <p>Algumas histórias merecem ser guardadas para sempre.</p>
+</header>
+
+<section>
+  <h2>O começo de tudo</h2>
+  <p>29 de dezembro de 2024</p>
+  <p>Uma data que faz parte da nossa história.</p>
+</section>
+
+<section>
+  <h2>Nosso tempo juntos ❤️</h2>
+  <div class="contador">
+    <div id="dias">Calculando...</div>
+    <p>dias de uma história especial</p>
+  </div>
+</section>
+
+<section>
+  <h2>Nossas lembranças 📸</h2>
+  <p>Os momentos que merecem ser lembrados.</p>
+  <p>Em breve, nossas fotos estarão aqui!</p>
+</section>
+
+<section>
+  <h2>Uma carta para você 💌</h2>
+  <div class="carta">
+    <p>
+      Existem momentos que ficam guardados
+      no coração de uma maneira especial.
+    </p>
+    <p>
+      Cada sorriso, cada conversa e cada lembrança
+      fazem parte de uma história que tem seu valor.
+    </p>
+    <p>
+      Este pequeno espaço é uma forma de guardar
+      com carinho um pouco de tudo que vivemos.
+    </p>
+    <p>Com carinho, ❤️</p>
+  </div>
+</section>
+
+<footer>
+  Feito com carinho ❤️
+</footer>
+
+<script>
+const inicio = new Date(2024, 11, 29);
+const hoje = new Date();
+
+const dias = Math.floor(
+  (hoje - inicio) / (1000 * 60 * 60 * 24)
+);
+
+document.getElementById("dias").textContent = dias;
+</script>
+
+</body>
+</html>
